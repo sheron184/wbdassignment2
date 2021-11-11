@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Student</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="h">
+		<div>
+			<h4>Quick Links</h4>
+		</div>
+		<div>
+			<h4>Insert New Student</h4>
+		</div>
+	</div>
+	<div class="cc w-fit-content">
+		<div class="links">
+			<div class="link border-bottom p-1 border-left border-top"><a href="manageallstudents.html">Manage Students</a></div>
+			<div class="link p-1 border-bottom border-left"><a href="manageallprojects.html">Manage Projects</a></div>
+			<div class="link p-2 border-bottom border-left"><a id="logout" href="#">Logout</a></div>
+		</div>
+		<div class="shadow-sm border w-fit-content">
+			<form id="newStudentForm" class="p-3">
+				<div class="p-2">
+					<a href="manageallstudents.html">Back</a>
+				</div>
+				<div class="border d-flex">
+					<div class="w-50 border-right p-2">
+						Name:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Name">
+					</div>
+				</div>
+				<div class="border d-flex">
+					<div class="w-50 border-right p-2">
+						Roll Number:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Roll Number">
+					</div>
+				</div>
+				<div class="border d-flex">
+					<div class="w-50 border-right p-2">
+						Phone Number:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Phone Number">
+					</div>
+				</div>
+				<div class="border d-flex">
+					<div class="w-50 border-right p-2">
+						Study Program:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Study Program">
+					</div>
+				</div>
+				<div class="border d-flex">
+					<div class="w-50 border-right p-2">
+						Status:
+					</div>
+					<div class="w-50 p-2">
+						<select>
+							<option>Active</option>
+							<option>Freezed</option>
+						</select>
+					</div>
+				</div>
+				<div class="p-2">
+					<button class="mybtn">Submit</button>
+					<a class="mybtn" id="clear">Clear</a>
+					<p class="error"></p>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

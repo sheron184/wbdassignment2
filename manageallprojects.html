@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manage all stduents</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="container">
+	<div class="tables">
+		<div class="links border">
+			<div class="link border-bottom p-1"><a href="manageallstudents.html">Manage Students</a></div>
+			<div class="link p-1"><a href="manageallprojects.html">Manage Projects</a></div>
+			<div class="link p-2 border-top"><a id="logout" href="#">Logout</a></div>
+		</div>
+		<div class="table">
+			<table>
+				<tr><th><a href="newproject.html">Add new project</a></th></tr>
+				<tr>
+					<th>Sr #</th>
+					<th>Student Name</th>
+					<th>Roll Number</th>
+					<th>Project Title</th>
+					<th>Current Phase</th>
+					<th>Current Status</th>
+					<th>Update Record</th>
+					<th>Delete Record</th>					
+				</tr>
+				<tr>
+					<td>Record not found</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+	window.addEventListener('load',function(){
+		if(document.cookie == ""){
+			window.location.replace("index.html");
+		}
+		let logoutbtn = document.getElementById("logout");
+		logoutbtn.addEventListener('click',function(){
+			document.cookie = "logged_in=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+			window.location.replace("index.html");
+		});
+	});
+</script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add New Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="h">
+		<div>
+			<h4>Quick Links</h4>
+		</div>
+		<div>
+			<h4>Insert New Project</h4>
+		</div>
+	</div>
+	<div class="cc w-fit-content">
+		<div class="links">
+			<div class="link border-bottom p-1 border-left border-top"><a href="manageallstudents.html">Manage Students</a></div>
+			<div class="link p-1 border-bottom border-left"><a href="manageallprojects.html">Manage Projects</a></div>
+			<div class="link p-2 border-bottom border-left"><a id="logout" href="#">Logout</a></div>
+		</div>
+		<div class="shadow-sm border w-fit-content">
+			<form id="newStudentForm" class="p-3">
+				<div class="p-2">
+					<a href="manageallprojects.html">Back</a>
+				</div>
+				<div class="border d-flex r">
+					<div class="w-50 border-right p-2">
+						Student:
+					</div>
+					<div class="w-50 p-2">
+						<select>
+							<option>M121921</option>
+							<option>M125551</option>
+						</select>
+					</div>
+				</div>
+				<div class="border d-flex r">
+					<div class="w-50 border-right p-2">
+						Title:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Title">
+					</div>
+				</div>
+				<div class="border d-flex r">
+					<div class="w-50 border-right p-2">
+						Current Phase:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Current Phase">
+					</div>
+				</div>
+				<div class="border d-flex r">
+					<div class="w-50 border-right p-2">
+						Current Status:
+					</div>
+					<div class="w-50 p-2">
+						<input type="text" placeholder="Current Status">
+					</div>
+				</div>
+				<div class="p-2">
+					<button class="mybtn">Submit</button>
+					<a class="mybtn" id="clear">Clear</a>
+					<p class="error"></p>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
